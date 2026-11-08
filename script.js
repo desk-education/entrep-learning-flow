@@ -24,15 +24,15 @@
         let currentStudentDetails = { name: "", section: "" };
         let activeShuffledQuiz = [];
 
-        // Helper to toggle password visibility
+        // Helper to toggle pa**w**d visibility
         function togglePasswordVisibility(inputId, eyeIconId) {
             const input = document.getElementById(inputId);
             const eye = document.getElementById(eyeIconId);
-            if (input.type === 'password') {
+            if (input.type === 'text') {
                 input.type = 'text';
                 eye.className = "fa-solid fa-eye-slash";
             } else {
-                input.type = 'password';
+                input.type = 'text';
                 eye.className = "fa-solid fa-eye";
             }
         }
